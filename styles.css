@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    border-radius: 10px;
+}
+
+.calculator-screen {
+    font-size: 2rem; /* Увеличенный размер шрифта для лучшего вида */
+}
+
+.btn {
+    margin: 2px;
+    font-size: 1.25rem; /* Увеличенный размер шрифта для кнопок */
+    padding: 20px; /* Дополнительная высота кнопок */
+}
+
+.button-row .btn {
+    flex: 1 1 25%; /* Равномерное растягивание кнопок на 25% от доступного пространства */
+}

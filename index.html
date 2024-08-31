@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="./styles.css" rel="stylesheet">
+    <title>MxCalc!</title>
+</head>
+<body class="bg-secondary">
+    <div class="container-fluid h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="calculator bg-secondary text-white p-4">
+                    <input type="text" class="calculator-screen w-100 mb-4 p-3 text-end bg-dark border-0 text-white" value="0" disabled>
+                    <div class="button-row d-flex flex-wrap justify-content-between">
+                        <button class="btn btn-dark m-1 flex-fill clear">C</button>
+                        <button class="btn btn-dark m-1 flex-fill operator">+/-</button>
+                        <button class="btn btn-dark m-1 flex-fill operator">%</button>
+                        <button class="btn btn-warning m-1 flex-fill operator">÷</button>
+                        <button class="btn btn-dark m-1 flex-fill number">7</button>
+                        <button class="btn btn-dark m-1 flex-fill number">8</button>
+                        <button class="btn btn-dark m-1 flex-fill number">9</button>
+                        <button class="btn btn-warning m-1 flex-fill operator">×</button>
+                        <button class="btn btn-dark m-1 flex-fill number">4</button>
+                        <button class="btn btn-dark m-1 flex-fill number">5</button>
+                        <button class="btn btn-dark m-1 flex-fill number">6</button>
+                        <button class="btn btn-warning m-1 flex-fill operator">-</button>
+                        <button class="btn btn-dark m-1 flex-fill number">1</button>
+                        <button class="btn btn-dark m-1 flex-fill number">2</button>
+                        <button class="btn btn-dark m-1 flex-fill number">3</button>
+                        <button class="btn btn-warning m-1 flex-fill operator">+</button>
+                        <button class="btn btn-dark m-1 flex-fill number">0</button>
+                        <button class="btn btn-dark m-1 flex-fill decimal">.</button>
+                        <button class="btn btn-warning m-1 flex-fill equal">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./renderer.js"></script>
+</body>
+</html>
